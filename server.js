@@ -19,6 +19,9 @@ app.use(methodOverride('_method'));
 // import routers
 const indexRouter = require('./routes/r_index');
 
+// setup routes
+app.use('/', indexRouter);
+
 // setup pug for views
 app.set('view engine', 'pug');
 app.set('views', path.join(__dirname, 'views'));
@@ -28,4 +31,4 @@ app.set('views', path.join(__dirname, 'views'));
 // add route for static files in public folder
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.listen(port)
+app.listen(PORT)
