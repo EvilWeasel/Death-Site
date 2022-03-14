@@ -1,0 +1,68 @@
+
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/styles/style.css')
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous" defer></script>
+    <script src="/scripts/layout.js" defer></script>
+    <script src="https://kit.fontawesome.com/d4200640d1.js" crossorigin="anonymous"></script>
+    block scripts
+  body
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/">Death-Site</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mynavbar">
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="/">Status</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/about">Über uns</a>
+            </li>
+          </ul>
+          <button class="btn btn-primary" type="button" id="btnNewCustomer">New Boss</button>
+          <form class="d-flex m-1">
+            <input class="form-control me-2" id="customerId" type="text" placeholder="Kundennummer">
+            <button class="btn btn-primary" type="button" id="btnSearchCustomer">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container-flex p-3">
+    block content
+    </div>
+    <footer class="bg-dark text-white text-center text-lg-start">
+      <div class="container p-4">
+        <div class="row">
+          <div class="col-lg-6 col-md-12 mb-4 mb-md-0 footer-col">
+            <h5 class="text-uppercase">Kontakt</h5>
+              ul.footer-list
+                li
+                  i.fa.fa-location-dot
+                  span.footer-address
+                    div Neckargartacher Str. 90
+                    div 74080 Heilbronn
+                li 
+                  i.fa.fa-phone
+                  span 07131 / 11833
+                li
+                  i.fa.fa-envelope
+                  span no-reply@lug-ag.de
+          </div>
+          <div class="col-lg-6 col-md-12 mb-4 mb-md-0 footer-col">
+            <h5 class="text-uppercase">About our Company</h5>
+            p Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, ullam?
+          </div>
+        </div>
+      </div>
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        <a class="" href="/about">Tobias Wehrle 2022</a>
+      </div>
+    </footer>
+
